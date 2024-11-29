@@ -8,7 +8,7 @@ const useEventActions = () => {
         : null;
       
       const response = await axios.post(
-        `http://localhost:5000/api/events`,
+        `https://conference-event-app.onrender.com/api/events`,
         eventData,
         {
           headers: {
@@ -29,7 +29,7 @@ const useEventActions = () => {
         : null;
       
       const response = await axios.put(
-        `http://localhost:5000/api/events/${eventId}`,
+        `https://conference-event-app.onrender.com/api/events/${eventId}`,
         eventData,
         {
           headers: {
@@ -50,7 +50,7 @@ const useEventActions = () => {
         : null;
       
       const response = await axios.delete(
-        `http://localhost:5000/api/events/${eventId}`,
+        `https://conference-event-app.onrender.com/api/events/${eventId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`, // Add the token in the Authorization header
